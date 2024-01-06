@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 80px;
+			height:80px;
+			border-radius: 70px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color:skyblue;
+			height: 250px;
+		}
+
+		.secondsection {
+			background-color:pink;
+			height: 150px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: grey;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid black;
+			border-radius:100%;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: cursive;;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+		    background-color:#dbe0d9;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 100%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: cursive;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "bts.jpg">
+			</div>
+			<li><a href="index.html">RUN BTS EPISODE LATEST NEWS</a></li>
+			<li><a href="about.html">INFO OF BTS</a></li>
+			<li><a href="contact.html">BTS ARMY SIGN IN</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+<div class="about-section" style="font-family: cursive;">
+  <h1>INFO OF BTS</h1>
+  <p>BTS won major awards at the Golden Disc and Seoul Music Awards in January 2018.[107][108] In March, the group premiered an eight-episode documentary titled Burn the Stage that offered a behind-the-scenes look at their 2017 Wings Tour, exclusively on YouTube Premium.[109][110] Their third Japanese studio album, Face Yourself, was released on April 4, 2018,[111] and quickly reached the top 5 of the U.S iTunes Albums chart. A nine-minute short film, titled Euphoria: Theme of "Love Yourself: Wonder" and featuring the song "Euphoria", followed the next day as a prelude to the group's third Korean-language studio album, Love Yourself: Tear.[112] BTS promoted Tear's May 18, 2018 release with an appearance at the 25th Billboard Music Awards two days later,[113] where they made their initial BBMA performance with their single, "Fake Love".[114][115] The group also won Top Social Artist for a second consecutive time.[116][117] The album coincided with the "轉" or "turn" of the series, touching on the tortuous enlightenment of loving without being loved, the pains and sorrows of separation, and providing encouragement to those without dreams.[118]	
+  </p>
+  <h2>LYRICS</p>
+  <p>
+  Since their formation, BTS have believed that telling their own stories is the best way for the younger generation to relate to their music.[310] Writing many of their own lyrics,[311][312] the group discusses universal life experiences such as sadness and loneliness in their work and turn them into something lighter and more manageable. RM stated that BTS tries to avoid a preaching or reprimanding tone in their songs "because that's not the way that we want to spread our message ... We're born with different lives, but you cannot choose some things. So we thought that love, the real meaning of it, starts with loving ourselves and accepting some ironies and some destinies that we have from the very start."[313] When asked if it is difficult to write about things like mental health, Suga responded,
+
+We feel that people who have the platform to talk about those things really should talk more, because they say depression is something where you go to the hospital and you're diagnosed, but you can't really know until the doctor talks to you ... More and more, I think artists or celebrities who have a voice should talk about these problems and bring it up to the surface
+  </p>
+</div>
+
+<h2 style="text-align:center">BOYS</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="BTS3.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>JIN,SUGA</h2>
+        <p class="title" >VISUAL</p>
+        <p>BANGTAN@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="btspic.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>RM,J-HOPE</h2>
+        <p class="title">RAPPERS</p>
+        <p>BIGHIT@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="BTS2.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>JK,V,JIMIN</h2>
+        <p class="title">MANAKE LINE</p>
+        
+        <p>BTS@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="background">
+		<p class="text-footer">
+		THANKYOU FOR VISTING ARMY<br>
+		Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
+
+</body>
+</html>
